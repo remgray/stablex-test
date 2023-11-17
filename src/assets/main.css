@@ -1,0 +1,37 @@
+:root {
+	--text-color: #fff;
+	--bg-color: #070709;
+	--primary-font: 'Roboto', sans-serif;
+	--secondary-font: 'Inter', sans-serif;
+	--container-offset: 20px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: var(--bg-color);
+	color: var(--text-color);
+	font-family: var(--primary-font);
+}
+
+section {
+	position: relative;
+	overflow: hidden;
+}
+
+.container {
+	max-width: calc(1480px + (var(--container-offset) * 2));
+	margin: 0 auto;
+	padding: 0 var(--container-offset);
+}
+
+.container-full {
+	max-width: calc(1480px + (var(--container-offset) * 2));
+	margin: 0 auto;
+}
